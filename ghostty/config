@@ -1,0 +1,4 @@
+theme = Catppuccin Mocha
+command = "/bin/zsh -l -c 'tmux new-session -A -s main'"
+fullscreen = true
+background-opacity = 0.9
