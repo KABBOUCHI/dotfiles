@@ -1,0 +1,4 @@
+.gitignore
+.git
+install.sh
+.DS_Store

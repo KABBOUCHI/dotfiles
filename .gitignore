@@ -1,11 +1,11 @@
 .DS_Store
 
 # Neovim
-nvim/.local
-nvim/lazy-lock.json
+.config/nvim/.local
+.config/nvim/lazy-lock.json
 
 # tmux plugins
-tmux/plugins/
+.config/tmux/plugins/
 
 # secrets
 *.secret
