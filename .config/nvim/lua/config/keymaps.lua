@@ -16,3 +16,9 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { noremap = true })
+
+vim.keymap.set("n", "<leader>bp", ":BufferLinePick<CR>")
+vim.keymap.set("n", "<leader>bd", "<cmd>BufferLinePickClose<cr>")
+
+vim.g.copilot_no_tab_map = true
+vim.keymap.set('i', '<S-Tab>', 'copilot#Accept("\\<S-Tab>")', { expr = true, replace_keycodes = false })
