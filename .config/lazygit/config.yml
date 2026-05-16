@@ -1,0 +1,7 @@
+customCommands:
+  - key: "<c-a>"
+    context: "files"
+    description: "Generate commit message with Lumen AI"
+    command: "zsh -lc 'source ~/.config/env/ai.secret && git diff --staged | lumen draft > /tmp/commit_msg && git commit -F /tmp/commit_msg'"
+    loadingText: "Generating commit message ..."
+    output: none
