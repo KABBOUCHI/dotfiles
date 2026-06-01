@@ -17,6 +17,11 @@ return {
 			languages = { "vue" },
 			configNamespace = "typescript",
 		}
+		local effect_plugin = {
+			name = "@effect/language-service",
+			location = vim.fn.getcwd() .. "/node_modules/@effect/language-service",
+			enableForWorkspaceTypeScriptVersions = true,
+		}
 		local vtsls_config = {
 			-- capabilities = capabilities,
 			settings = {
@@ -24,6 +29,7 @@ return {
 					tsserver = {
 						globalPlugins = {
 							vue_plugin,
+							effect_plugin,
 						},
 					},
 				},
